@@ -1,0 +1,53 @@
+.posts-container {
+  position: absolute;
+  top: 52%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post {
+  width: 80%;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.post h4 {
+  font-size: 1.8rem;
+  color: #e87121;
+}
+.post p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.new-post {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+}
+
+.new-post form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.new-post form input {
+  width: 80%;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.new-post form button {
+  background-color: var(--brand-color);
+  color: #e5e5e5;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  width: 75px;
+}

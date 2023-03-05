@@ -1,0 +1,101 @@
+:root {
+  --brand-color: #e87121;
+}
+
+.home-page {
+  background-color: #e5e5e5;
+  height: 100vh;
+  position: relative;
+}
+
+.home-page::before {
+  position: absolute;
+  content: " ";
+  width: 50px;
+  height: 50px;
+  background-color: var(--brand-color);
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  transform: rotate(80deg);
+  top: -10%;
+  left: 10%;
+  /* animation-name: fall;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite; */
+}
+
+.home-header--txt {
+  color: var(--brand-color);
+}
+
+.home-header--txt span {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.home-header--txt h1 {
+  font-size: 2.4rem;
+}
+
+.home-header--txt p {
+  font-size: 1.2rem;
+}
+
+.home-hero {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  justify-content: center;
+  border-bottom: 1px solid var(--brand-color);
+  padding-bottom: 15%;
+}
+
+.home-hero img {
+  width: 100px;
+  border-right: 1px solid var(--brand-color);
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-right: 2rem;
+}
+
+.btn-container {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.btn-container button {
+  width: 100px;
+  font-size: 1rem;
+}
+
+.home-signup--btn {
+  background-color: transparent;
+  border: 1px solid var(--brand-color);
+  color: var(--brand-color);
+  padding: 0.25rem 0.5rem;
+}
+
+.home-signin--btn {
+  background-color: var(--brand-color);
+  color: #e5e5e5;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  width: 75px;
+}
+
+@keyframes fall {
+  0% {
+    top: -10%;
+    transform: rotate(80deg);
+  }
+
+  100% {
+    top: 110%;
+    transform: rotate(720deg);
+  }
+}
