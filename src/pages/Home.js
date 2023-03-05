@@ -3,16 +3,16 @@ import "./Home.css";
 import logo from "../assets/Hive-Mind-notxt.png";
 import SignUpForm from "../components/SignUpForm";
 
-import { useSelector, useDispatch } from "react-redux";
+// import { useSelector, useDispatch } from "react-redux";
 import { auth } from "../config/firebase";
 import { onAuthStateChanged, signOut } from "firebase/auth";
-import App from "../App";
+
 import SignInForm from "../components/SignInForm";
 
 import Content from "../components/Content";
 function Home() {
-  const [loggedIn, setIsLoggedIn] = useState(null);
-  const loggedInState = useSelector((state) => state.signedUp.signedUp);
+  // const [loggedIn, setIsLoggedIn] = useState(null);
+  // const loggedInState = useSelector((state) => state.signedUp.signedUp);
   const [user, setUser] = useState({});
   const [signUpClicked, setSignUpClicked] = useState(false);
   const [loginClicked, setLogInClicked] = useState(false);
