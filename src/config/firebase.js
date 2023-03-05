@@ -4,7 +4,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 const firebaseConfig = {
-  apiKey: `${process.env.REACT_APP_FIRESTORE}`,
+  apiKey: `AIzaSyBfXuai2zIekQ-A0xU_iyiN_WAedHuaXlEne`,
   authDomain: "hive-mind-4a430.firebaseapp.com",
   projectId: "hive-mind-4a430",
   storageBucket: "hive-mind-4a430.appspot.com",
