@@ -1,10 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./SignUpForm.css";
 import { auth } from "../config/firebase";
-import {
-  createUserWithEmailAndPassword,
-  onAuthStateChanged,
-} from "firebase/auth";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 import { signUpActions } from "../store/signed-up-slice";
 import { useSelector, useDispatch } from "react-redux";
 function SignUpForm() {
